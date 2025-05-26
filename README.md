@@ -1,6 +1,7 @@
 ![](imagenes/unaj_logo.png)
 
-* Maestría en Ciencia de Datos*
+*Maestría en Ciencia de Datos*
+*Instituto de Ingeniería y Agronomía*
 
 # Trabajo Integrador: Programación
 
