@@ -23,7 +23,7 @@ El objetivo del proyecto es desarrollar un sistema de gestión académica que pe
 
 Implementar la obtención de información académica desde un archivo CSV que contendrá:
 - Información personal de cada estudiante (nombre y apellido)
-- Califi caciones en tres asignaturas clave: Matemáticas, Física y Literatura
+- Calificaciones en tres asignaturas clave: Matemáticas, Física y Literatura
 - Cualquier información adicional relevante para el análisis académico (opcional)
 
 ### 2. Modelado Orientado a Objetos
