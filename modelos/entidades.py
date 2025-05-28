@@ -1,34 +1,23 @@
+from dataclasses import dataclass
+
+@dataclass
 class Materia:
-    """Clase que representa una materia con su nota"""
-    def __init__(self, nombre, nota=0):
-        self.nombre = nombre
-        self.nota = nota
-
-    def __str__(self):
-        return f"{self.nombre}: {self.nota}"
-
-    def aprobada(self):
-        """Determina si la materia está aprobada"""
+    nombre: str
+    nota: int
+    
+    def aprobada(self) -> bool:
         return self.nota >= 6
 
+@dataclass
 class Estudiante:
-    """Clase que representa un estudiante con sus materias y calificaciones"""
-    def __init__(self, nombre, apellido, materias):
-        self.nombre = nombre
-        self.apellido = apellido
-        self.materias = {m.nombre: m for m in materias}
-
-    def promedio_general(self):
-        """Calcula el promedio general del estudiante"""
-        notas = [m.nota for m in self.materias.values()]
-        return sum(notas) / len(notas) if notas else 0
-
-    def materias_aprobadas(self):
-        """Retorna la cantidad de materias aprobadas"""
-        return sum(1 for m in self.materias.values() if m.aprobada())
-
-    def __str__(self):
-        """Representación legible del estudiante."""
-        return (f"Estudiante: {self.nombre} {self.apellido}\n"
-                f"Promedio: {self.promedio_general():.2f}\n"
-                f"Materias aprobadas: {self.materias_aprobadas()}/{len(self.materias)}")
+    nombre: str
+    apellido: str
+    materias: list  # Lista de objetos Materia
+    
+    def __str__(self) -> str:
+        return f"{self.nombre} {self.apellido} - Promedio: {self.calcular_promedio():.2f}"
+    
+    def calcular_promedio(self) -> float:
+        if not self.materias:
+            return 0.0
+        return sum(materia.nota for materia in self.materias) / len(self.materias)
