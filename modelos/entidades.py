@@ -12,7 +12,7 @@ class Materia:
 class Estudiante:
     nombre: str
     apellido: str
-    materias: list  # Lista de objetos Materia
+    materias: list  # Vamos a definir Materia como Lista de objetos
     
     def __str__(self) -> str:
         return f"{self.nombre} {self.apellido} - Promedio: {self.calcular_promedio():.2f}"

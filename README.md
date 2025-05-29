@@ -42,7 +42,7 @@ El sistema debe realizar los siguientes cálculos y análisis:
 - Estadísticas generales del grupo:
     - promedio por asignatura
     - porcentaje de aprobación general
-    - identifi cación de la asignatura con mayor y menor rendimiento.
+    - identificación de la asignatura con mayor y menor rendimiento.
 
 ### 4. Presentación de Resultados
 

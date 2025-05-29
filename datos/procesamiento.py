@@ -3,7 +3,7 @@ from typing import List
 from modelos.entidades import Estudiante, Materia
 
 def procesar_csv(ruta_csv: str) -> List[Estudiante]:
-    """Procesa el CSV y crea instancias de Estudiante con sus Materias"""
+    """Procesa el CSV y crea instancias de Estudiante con sus respectivas calificaciones de Materias"""
     estudiantes = []
     
     with open(ruta_csv, mode='r', encoding='utf-8') as file:

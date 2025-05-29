@@ -2,10 +2,6 @@ import numpy as np
 from typing import List, Dict
 from modelos.entidades import Estudiante
 
-import numpy as np
-from typing import List, Dict
-from modelos.entidades import Estudiante
-
 def calcular_estadisticas_grupo(estudiantes: List[Estudiante]) -> Dict[str, float]:
     if not estudiantes:
         return {}
