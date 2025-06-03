@@ -1,8 +1,11 @@
+# Si todavía no fue instalado, se debe correr el código: pip install numpy
+
 import numpy as np
 from typing import List, Dict
 from modelos.entidades import Estudiante
 
 def calcular_estadisticas_grupo(estudiantes: List[Estudiante]) -> Dict[str, float]:
+    """Calcula estadísticas individuales de los estudiantes."""
     if not estudiantes:
         return {}
     

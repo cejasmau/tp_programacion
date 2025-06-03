@@ -1,5 +1,8 @@
+# Si todavía no fue instalado, se debe correr el código: pip install dataclasses
+
 from dataclasses import dataclass
 
+# Usamos dataclasses para definir las entidades de nuestro modelo de forma más sencilla y legible.
 @dataclass
 class Materia:
     nombre: str
